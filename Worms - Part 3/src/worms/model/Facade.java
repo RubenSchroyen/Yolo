@@ -424,17 +424,17 @@ public class Facade implements IFacade
 
 
 	@Override
-	public void addNewWorm(World world, Program program) {
-		// TODO Auto-generated method stub
-		
+	public void addNewWorm(World world, Program program) 
+	{
+		world.addWorm();
 	}
 
 
 
 	@Override
-	public boolean canTurn(Worm worm, double angle) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean canTurn(Worm worm, double angle) 
+	{
+		return worm.isValidTurn(angle);
 	}
 
 
@@ -443,24 +443,23 @@ public class Facade implements IFacade
 	public Worm createWorm(World world, double x, double y, double direction,
 			double radius, String name, Program program) 
 	{
-		// TODO Auto-generated method stub
 		Worm worm = new Worm(world, x, y, direction, radius, name, program);
-		return null;
+		return worm;
 	}
 
 
 
 	@Override
-	public boolean isGameFinished(World world) {
-		// TODO Auto-generated method stub
+	public boolean isGameFinished(World world) 
+	{
 		return world.isFinished();
 	}
 
 
 
 	@Override
-	public ParseOutcome<?> parseProgram(String programText,
-			IActionHandler handler) {
+	public ParseOutcome<?> parseProgram(String programText, IActionHandler handler) 
+	{
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -468,16 +467,16 @@ public class Facade implements IFacade
 
 
 	@Override
-	public boolean hasProgram(Worm worm) {
-		// TODO Auto-generated method stub
+	public boolean hasProgram(Worm worm) 
+	{
 		return worm.hasProgram();
 	}
 
 
 
 	@Override
-	public boolean isWellFormed(Program program) {
-		// TODO Auto-generated method stub
+	public boolean isWellFormed(Program program) 
+	{
 		return program.isWellFormed();
 	}
 
