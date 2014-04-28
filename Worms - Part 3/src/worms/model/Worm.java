@@ -11,7 +11,9 @@ package worms.model;
  *																																  *
  *		2. new team gets instantly removed because there are no worms in it yet													  *		
  *																														  		  *
- *																																  *
+ *		3. PROGRAM CLASS and subsequently all additions to worm/world/facade													  *
+ *																															      *		
+ *																															      *
  *		LOW PRIORITY																											  *
  *		------------																										      *
  *																															      *
